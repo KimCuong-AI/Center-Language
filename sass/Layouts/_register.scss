@@ -1,0 +1,104 @@
+.register {
+    margin-top: 60px;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    padding: 0px 0;
+    /* make the padding the same as the height of the pseudo elements*/
+    &::after {
+        content: "";
+        background-image: url(../img/accent_bottom_wave_01.png);
+        width: 100%;
+        height: 200px;
+        /*make the height the same as the height of the background image size*/
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .register-wrapper {
+        background-color: white;
+        width: 100%;
+        .register__image {
+            z-index: 400;
+        }
+
+        .register__form {
+            z-index: 100;
+            width: 100%;
+            form {
+                
+                background-color: white;
+                border-radius: 10px;
+                padding: 20px;
+                width: 70%;
+                box-shadow: 1px 8px 20px -10px #888888;
+                .register__icon {
+                    position: relative;
+                    color: #aaa;
+                    font-size: 16px;
+                    .fa-user {
+                        position: absolute;
+                        top: 8px;
+                        left: 28px;
+                    }
+                    .fa-envelope {
+                        position: absolute;
+                        top: 8px;
+                        left: 28px;
+                    }
+                    .fa-graduation-cap{
+                        position: absolute;
+                        top: 10px;
+                        left: 15px;
+                    }
+                    .fa{
+                        color: #aa017e;
+                    }
+
+                    input{
+                        text-indent: 32px;
+                        max-width: 1000px;
+                        height: 32px;
+                        background: white;
+                        border: 1px solid #aaa;
+                        border-radius: 20px;
+                    }
+                }
+                @media screen and (max-width: 1200px) {
+                    width: 90%;
+                }
+                @media screen and (max-width: 996px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 768px) {
+                    .register__icon {
+                        padding-bottom: 18px;
+                    }
+                    .register__email {
+                        padding-bottom: 0;
+                    }
+                }
+                #exampleFormControlTextarea3 {
+                    border-radius: 20px;
+                }
+                #selectLanguage {
+                    padding-left: 40px;
+
+                }
+                button {
+                    border: 2px solid #aa017e !important;
+                    transition: 0.5s;
+                    background-color: #aa017e;
+                    padding: 10px 50px;
+                    border-radius: 20px;
+                    color: #9d2b2b;
+                    &:hover{
+                        border: 2px solid #aa017e;
+                        background-color: white; 
+                    }
+                }
+            }
+        }
+    }
+}

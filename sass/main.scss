@@ -1,0 +1,21 @@
+//helper
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+//vendors
+
+//Base
+@import "./Base/reset";
+
+
+//components
+@import "./Components//button";
+@import "./Components/card";
+@import "./Components/sidebarMini";
+//Layouts
+@import "./Layouts/aboutus";
+@import "./Layouts/teacher";
+@import "./Layouts/register";
+@import "./Layouts/footer"
+
+//theme

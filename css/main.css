@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.aboutus {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.aboutus .aboutus__image {
+  z-index: 10;
+}
+
+.aboutus .aboutus__image .aboutus img {
+  width: 100%;
+}
+
+.aboutus .aboutus__content {
+  z-index: 10;
+}
+
+.aboutus .aboutus__content .aboutus__item p:nth-child(1) {
+  color: #b61984;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus .aboutus__content .aboutus__item p:nth-child(2) {
+  font-weight: 650;
+  font-size: 60px;
+}
+
+.aboutus::before {
+  content: '';
+  background: url("../img/yellow_top_wave_01.png");
+  width: 100%;
+  min-height: 200px;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+}
+
+.aboutus::after {
+  content: '';
+  background: url("../img/Violet_top_left_wave.png");
+  width: 100%;
+  min-height: 200px;
+  background-size: 100% 100%;
+  background-position: bottom;
+  position: absolute;
+  bottom: 0;
+}
+
+.teacher {
+  position: relative;
+  background-color: #dcd1f3;
+  min-height: 500px;
+}
+
+.teacher .teacher__wrapper {
+  padding: 0 200px;
+}
+
+@media screen and (max-width: 1340px) {
+  .teacher .teacher__wrapper {
+    padding: 0 30px;
+  }
+}
+
+.teacher .teacher__wrapper .teacher__item {
+  z-index: 10 !important;
+  /* padding:100px !important; */
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content {
+  border-radius: 5%;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content h3 {
+  font-weight: 550;
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content:hover {
+  box-shadow: 1px 6px 10px 1px #888888;
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content p:first-child {
+  color: #b61984;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content a {
+  cursor: unset;
+  display: block;
+  overflow: hidden;
+  border-radius: 5% 5% 0% 0%;
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content a img {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  padding: 0;
+  transform: scale(1.01);
+}
+
+.teacher .teacher__wrapper .teacher__item .teacher__content a img:hover {
+  border-radius: 5% 5% 0% 0%;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  width: 100%;
+}
+
+.teacher::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+.register {
+  margin-top: 60px;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+  padding: 0px 0;
+  /* make the padding the same as the height of the pseudo elements*/
+}
+
+.register::after {
+  content: "";
+  background-image: url(../img/accent_bottom_wave_01.png);
+  width: 100%;
+  height: 200px;
+  /*make the height the same as the height of the background image size*/
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.register .register-wrapper {
+  background-color: white;
+  width: 100%;
+}
+
+.register .register-wrapper .register__image {
+  z-index: 400;
+}
+
+.register .register-wrapper .register__form {
+  z-index: 100;
+  width: 100%;
+}
+
+.register .register-wrapper .register__form form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 1px 8px 20px -10px #888888;
+}
+
+.register .register-wrapper .register__form form .register__icon {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.register .register-wrapper .register__form form .register__icon .fa-user {
+  position: absolute;
+  top: 8px;
+  left: 28px;
+}
+
+.register .register-wrapper .register__form form .register__icon .fa-envelope {
+  position: absolute;
+  top: 8px;
+  left: 28px;
+}
+
+.register .register-wrapper .register__form form .register__icon .fa-graduation-cap {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.register .register-wrapper .register__form form .register__icon .fa {
+  color: #aa017e;
+}
+
+.register .register-wrapper .register__form form .register__icon input {
+  text-indent: 32px;
+  max-width: 1000px;
+  height: 32px;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .register .register-wrapper .register__form form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .register .register-wrapper .register__form form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register .register-wrapper .register__form form .register__icon {
+    padding-bottom: 18px;
+  }
+  .register .register-wrapper .register__form form .register__email {
+    padding-bottom: 0;
+  }
+}
+
+.register .register-wrapper .register__form form #exampleFormControlTextarea3 {
+  border-radius: 20px;
+}
+
+.register .register-wrapper .register__form form #selectLanguage {
+  padding-left: 40px;
+}
+
+.register .register-wrapper .register__form form button {
+  border: 2px solid #aa017e !important;
+  transition: 0.5s;
+  background-color: #aa017e;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #9d2b2b;
+}
+
+.register .register-wrapper .register__form form button:hover {
+  border: 2px solid #aa017e;
+  background-color: white;
+}
+
+footer {
+  background: url(../img/footer_background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  background-repeat: no-repeat;
+}
+
+footer .footer__content {
+  padding: 100px 0px;
+}
+
+footer .footer__content .footer__item {
+  padding-top: 30px;
+}
+
+footer .footer__content .footer__item h3 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+footer .footer__content .footer__item p {
+  color: white;
+}
+
+footer .footer__content .footer__item i {
+  padding-right: 15px;
+}
+
+footer .footer__content .footer__item ul {
+  padding: 0;
+}
+
+footer .footer__content .footer__item ul li {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer__content .footer__item ul li a {
+  color: white;
+  transition: 1s;
+}
+
+footer .footer__content .footer__item ul li a:hover {
+  opacity: 0.5;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer__content .footer__item ::placeholder {
+  color: white;
+}
+
+footer .footer__content .footer__item input {
+  transition: 1s;
+  border: 1px solid #b61984;
+  border-radius: 20px;
+  padding: 10px 10px;
+  outline: none;
+  background-color: #aa017e;
+  color: white;
+  text-align: center;
+}
+
+footer .footer__content .footer__item input:focus {
+  border-color: white;
+}
+
+footer .footer__content .footer__item .btn__subscribe {
+  transition: 1s;
+  border: 1px solid #aa017e;
+  padding: 10px 55px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+footer .footer__content .footer__item .btn__subscribe:hover {
+  background: #aa017e;
+  border: 1px solid white !important;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
